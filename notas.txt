@@ -1,0 +1,12 @@
+   ### el ambiente del programa es grande y tiene dificultades, por tanto se recomienda que usemos un ambiente en conda
+   ### de python 3.6, para esto instalaremos conda y correremos los siguientes codigos desde el terminal:
+
+
+    conda config --set allow_conda_downgrades true
+    conda install conda=4.6.11
+    conda create -n env_zipline python=3.6
+    activate env_zipline
+    conda install -c Quantopian zipline
+
+    ###antes del siguiente codigo es importante que instalemos pip en nuestro ambiente
+    pip install numexpr --upgrade
